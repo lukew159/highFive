@@ -54,6 +54,7 @@
         
     var borat = new Tone.Player({
         "retrigger" : true
+        "starTime" : 0.2
     });
     
     slap.load( "slap.mp3" );
@@ -67,7 +68,7 @@
     function mouseActions(event) {
         UnmuteButton().start();
         slap.start();
-        borat.start().startTime(2);
+        borat.start();
     }     
         
     </script>
