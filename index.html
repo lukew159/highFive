@@ -53,8 +53,7 @@
     });
         
     var borat = new Tone.Player({
-        "retrigger" : true,
-        startTime : 2,
+        "retrigger" : true
     });
     
     slap.load( "slap.mp3" );
@@ -62,6 +61,8 @@
     slap.connect(Tone.Master);
         
     borat.load( "borat.mp3" );
+        
+    borat.startTime(2.0);
         
     borat.connect(Tone.Master);
 
